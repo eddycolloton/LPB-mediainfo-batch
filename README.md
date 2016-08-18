@@ -28,7 +28,8 @@ Then we used Excel to create the list of commands that would eventually be our b
 #Excel
 I've attached an Excel file to this repo with the different formulas "baked in" but I'll list them here as well. 
 
-1. The first column, A, is populated with the file names output from the DIR command. 
+1. The first column, A, is populated with the file names output from the DIR command.
+  * May need some data clean-up here. If file names have spaces or special characters in them, they must be enclosed in quotation marks, or the command line won't recognize them when they're input as commands. At LPB there were only a few files like this and we just did it by hand.
 2. Column B is populated with the MediaInfo command "mediainfo --output=PBCore2"
   * note that the "PBCore2" part of that command is case sensitive 
 3. Column C uses the formula:
@@ -42,3 +43,4 @@ The contents of column D from step five made up the contents of our batch file.
 From there just run the batch file in the same directory the DIR command was run (since the file names don't have the full path).
 
 Big thanks to John Tooraen of LPB, who really did all of this, and I just watched.
+Also thanks to Kieran O'Leary for his interest and feedback on this repo. He's found a faster work around (no excel) that you can find here: https://gist.github.com/kieranjol/fe9b016d31cee0d88619ed3f12f682bc 
