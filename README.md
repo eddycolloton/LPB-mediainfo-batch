@@ -15,7 +15,7 @@ Our goal at LPB was to run MediaInfo on all of our web media files (videos that 
 To create one xml file through MediaInfo use this command:
   mediainfo --Output=PBCore2 'input file name' > 'output file name.xml'
 
-Thanks to Dave Rice for creating the PBCore 2 output in mediainfo, more here: https://github.com/dericed/MediaInfo
+Thanks to Dave Rice for creating the PBCore 2 output in mediainfo, more here: https://github.com/MediaArea/MediaInfoLib/blob/master/Source/MediaInfo/Export/Export_PBCore2.cpp 
 
 #Batch
 Creating more than one xml file is a bit more complicated, so we chose to create a batch file, or .bat file, and run that through the Windows command line. The batch file is just the command from the section above, written over and over again, with the file name of the input and output changed accordingly. 
