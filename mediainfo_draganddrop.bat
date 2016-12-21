@@ -1,0 +1,1 @@
+for %%F in ('%1') do ("C:\Users\ecolloton\Downloads\MediaInfo_CLI_0.7.87_Windows_x64\MediaInfo.exe" --output=PBCore2 %1 > %%~nF_MediaInfo.xml)
